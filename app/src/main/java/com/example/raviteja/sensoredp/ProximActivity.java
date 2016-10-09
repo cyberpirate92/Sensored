@@ -32,7 +32,7 @@ public class ProximActivity extends Activity implements SensorEventListener {
         manager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mProximity = manager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         if(mProximity == null) {
-            Toast.makeText(this, "Sorry, your device does not have a proximity sensor", Toast.LENGTH_LONG);
+            Toast.makeText(this, "Sorry, your device does not have a proximity sensor", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
