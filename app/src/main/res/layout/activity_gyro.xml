@@ -82,10 +82,40 @@
         android:textColor="@android:color/holo_green_light" />
 
     <TextView
+        android:text="MAX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="CURRENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/textView12"
+        android:layout_marginEnd="66dp"
+        android:layout_above="@+id/textView9"
+        android:layout_toStartOf="@+id/textView13"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
         android:text="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
+        android:layout_marginStart="21dp"
         android:id="@+id/textView9"
         android:fontFamily="casual"
         android:textSize="18sp"
@@ -93,5 +123,61 @@
         android:textColor="@android:color/holo_green_light"
         android:layout_alignBaseline="@+id/textView6"
         android:layout_alignBottom="@+id/textView6"
-        android:layout_toEndOf="@+id/textView6" />
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView15"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="RESET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/button4"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/holo_green_light"
+        android:onClick="resetMaxValues"/>
 </RelativeLayout>
